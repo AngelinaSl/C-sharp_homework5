@@ -39,20 +39,30 @@ int MaxArray(int[] array3)
     return (Max);
 }
 
-int MinArray(int[] array4)
+int MinArray(int[] array4) // метод поиска минимального без привязки к значению Max
 {
-    
-    MaxArray(array4);
-    int Max = MaxArray(array4);
-    int index2 = 0;
-    int Min = Max;
-    while ( index2 < array4.Length)
-    {
-        if (array4[index2] < Min)Min = array4[index2];
-        index2++;
-    }
-    return (Min);
+    int min = array4[0];
+for (int i = 1; i < array4.Length; i++)
+{
+	if (array4[i] < min) min = array4[i];
 }
+  return min;
+}
+
+
+// int MinArray(int[] array4) // метод поиска минимального через вызов метода поиска максимального
+// {
+//     MaxArray(array4);
+//     int Max = MaxArray(array4);
+//     int index2 = 0;
+//     int Min = Max;
+//     while ( index2 < array4.Length)
+//     {
+//         if (array4[index2] < Min)Min = array4[index2];
+//         index2++;
+//     }
+//     return (Min);
+// }
 
 int[] array = new int[4];
 FillArray(array);
