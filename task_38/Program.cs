@@ -31,9 +31,9 @@ int MaxArray(int[] array3)
 {
     int Max = 0;
     int index1 = 0;
-       while ( index1 < array3.Length)
+    while (index1 < array3.Length)
     {
-        if (array3[index1] > Max)Max = array3[index1];
+        if (array3[index1] > Max) Max = array3[index1];
         index1++;
     }
     return (Max);
@@ -42,11 +42,11 @@ int MaxArray(int[] array3)
 int MinArray(int[] array4) // метод поиска минимального без привязки к значению Max
 {
     int min = array4[0];
-for (int i = 1; i < array4.Length; i++)
-{
-	if (array4[i] < min) min = array4[i];
-}
-  return min;
+    for (int i = 1; i < array4.Length; i++)
+    {
+        if (array4[i] < min) min = array4[i];
+    }
+    return min;
 }
 
 
