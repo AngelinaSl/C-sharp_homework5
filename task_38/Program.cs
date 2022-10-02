@@ -41,16 +41,11 @@ int MaxArray(int[] array3)
 
 int MinArray(int[] array4)
 {
-    int Max = 0;
-    int Min = 0;
+    
+    MaxArray(array4);
+    int Max = MaxArray(array4);
     int index2 = 0;
-       while ( index2 < array4.Length)
-    {
-        if (array4[index2] > Max)Max = array4[index2];
-        index2++;
-    }
-    index2 = 0;
-    Min = Max;
+    int Min = Max;
     while ( index2 < array4.Length)
     {
         if (array4[index2] < Min)Min = array4[index2];
